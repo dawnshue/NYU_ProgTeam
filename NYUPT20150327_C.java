@@ -4,9 +4,9 @@ public class Main {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     int cases = input.nextInt();
-    for(int case=0;case<cases;case++) {
+    for(int p=0;p<cases;p++) {
       int l = input.nextInt();
-      String s = input.nextLine();
+      String s = input.next();
       System.out.println(ordered(s));
     }
     
