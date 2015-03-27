@@ -8,15 +8,13 @@ public class Main {
     int watched = 0;
     int curr = 1;
     for(int m=0;m<moments;m++) {
-      int = scan.nextInt();
-      int  = scan.nextInt();
-      while(curr+skip<pos) {
+      int start = scan.nextInt();
+      int end = scan.nextInt();
+      while(curr+skip<=start) {
         curr=curr+skip;
       }
-      watched = watched+pos-curr;
-      watched = watched+duration;
-      
+      watched = watched+end-curr+1;
+      pos = end+1;
     }
-    
   }
 }
