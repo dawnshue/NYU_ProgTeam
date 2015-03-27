@@ -12,16 +12,25 @@ public class Main {
     
   }
   private static String ordered(String s) {
-    char[] s2 = s.toCharArray();
-    for(int i=0;i<s.length();i++) {
+    String ans = s;
+    int i=0;
+    while(i<s.length()) {
+      char[] s2 = s.toCharArray();
+    while(i<s.length()) {
       int swap = smallest(s2,i);
       if(swap==i) {
+        i++;
         continue;
       }
       char temp = s2[i];
       s2[i] = s2[swap];
       s2[swap] = temp;
       break;
+    }
+    if(new String(s2)<ans) {
+      ans = new String(s2);
+    }
+    i++;
     }
     return new String(s2);
   }
