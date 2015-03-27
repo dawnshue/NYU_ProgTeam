@@ -1,4 +1,4 @@
-// 
+//  http://acm.hust.edu.cn/vjudge/contest/view.action?cid=72675#problem/C
 import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
