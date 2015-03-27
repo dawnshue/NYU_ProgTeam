@@ -1,0 +1,20 @@
+A.
+Goal change all letters to G with the minimum number of steps
+The first segment we toggle, all the letters to the left are already G
+Find the first R and toggle the segment starting with that letter
+The computer the actual number of toggles required
+You want to iterate as few times, so either:
+1. used segmenttree or binary index structure to find 
+2. use a double-ended queue, every time you see an R, push its position into the queue, at the next R if it is within distance K, you pop the head and then module by 2
+After you make the decision, you push the decision if it is a toggle
+Every element will be pushed/popped at most once
+
+C. Since string is small, you could just try all possible swaps
+
+D. 
+Quite simple, just looks complicated
+String with ATCG
+You want to find another string that can be aligned with the given one to achieve a maximum score function
+Make a string as long as 
+To score max total points you want your string to have the most frequently appearing string
+If you have multiple letters, then your string have a combination of those letters
