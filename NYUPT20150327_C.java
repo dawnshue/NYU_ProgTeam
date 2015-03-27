@@ -15,15 +15,19 @@ public class Main {
     char[] s2 = s.toCharArray();
     for(int i=0;i<s.length();i++) {
       int swap = smallest(s2,i);
+      if(swap==i) {
+        continue;
+      }
       char temp = s2[i];
       s2[i] = s2[swap];
       s2[swap] = temp;
+      break;
     }
     return new String(s2);
   }
   private static int smallest(char[] s, int i) {
     int ans = i++;
-    while(i<s.length {
+    while(i<s.length) {
       if(s[i]<s[ans]) {
         ans=i;
       }
