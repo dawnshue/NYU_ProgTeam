@@ -1,4 +1,4 @@
-
+//  http://acm.hust.edu.cn/vjudge/contest/view.action?cid=72675#problem/F
 import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
@@ -14,7 +14,8 @@ public class Main {
         curr=curr+skip;
       }
       watched = watched+end-curr+1;
-      pos = end+1;
+      curr = end+1;
     }
+    System.out.println(watched);
   }
 }
