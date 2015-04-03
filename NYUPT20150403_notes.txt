@@ -7,3 +7,7 @@ If some string w is a prefix of another, then sort all the strings and prefixes 
 Build a tree of the digits and see if previous nodes are "filled" as you travel up the tree
 Instead of inserting a string to eh collection, insert the hash value and then search for integers
 e. build a dynamic programming table
+computer a8 from a4
+Decompose k from its binary representation
+if k = 11, then binary form is 1011, so you know you want s^3=8 once, 2^2 once, and 2^0 once
+So multiply a^1, a^2 and ^3 together
