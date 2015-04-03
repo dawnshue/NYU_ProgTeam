@@ -12,10 +12,15 @@ public class Main {
       }
     }
     
-    System.out.println(hasCycle(matrix));
+    System.out.println(evaluate(n, m, matrix));
     
   }
-  private static String hasCycle(char[][] matrix) {
-    
+  private static String evaluate(int n, int m, char[][] matrix) {
+    for(int i=0; i<n-1; i++) {
+      for(int i2=0; i2<m-1; i2++) {
+        if(hasCycle(matrix,i,i2)) return "Yes";
+      }
+    }
+    return "No";
   }
 }
