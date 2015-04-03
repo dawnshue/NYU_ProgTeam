@@ -9,19 +9,19 @@ public class Main {
       String[] strprefixes = new String[numbers];
       for(int n=0; n<numbers; n++) {
         //prefixes[n] = scanner.nextInt();
-        strprefixes[n] = Integer.toString(prefixes[n]);
+        strprefixes[n] = scanner.next();
       }
        System.out.println(isConsistent(prefixes, strprefixes));
     }
   }
   
-  public static String isConsistent(int[] prefixes, String[] strprefixes) {
-    for(int i=0; i<(prefixes.length-1); i++) {
-      int curr = prefixes[i]*10;
+  public static String isConsistent(String[] strprefixes) {
+    for(int i=0; i<(strprefixes.length-1); i++) {
+      //int curr = prefixes[i]*10;
       int len = strprefixes[i].length();
-      for(int i2=i+1; i2<prefixes.length; i2++) {
-        if(prefixes[i2]==prefixes[i] ||
-          (prefixes[i2]>=curr && strprefixes[i2].substring(0,len).equals(strprefixes[i]))
+      for(int i2=i+1; i2<strprefixes.length; i2++) {
+        if(strprefixes[i2].equals(strprefixes[i]) ||
+          strprefixes[i2].substring(0,len).equals(strprefixes[i])
         ) {
           return "NO";
         }
