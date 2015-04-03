@@ -10,18 +10,18 @@ public class Main {
       for(int n=0; n<numbers; n++) {
         prefixes[n] = scanner.nextInt();
         strprefixes[n] = Integer.toString(prefixes[n]);
-        System.out.println(isConsistent(prefixes, strprefixes);
       }
+       System.out.println(isConsistent(prefixes, strprefixes));
     }
   }
   
   public static String isConsistent(int[] prefixes, String[] strprefixes) {
     for(int i=0; i<(prefixes.length-1); i++) {
       int curr = prefixes[i]*10;
-      int temp = Integer.parseInt(prefixes[i]);
+      int len = strprefixes[i].length();
       for(int i2=i+1; i2<prefixes.length; i2++) {
         if(prefixes[i2]==prefixes[i] ||
-          (prefixes[i2]>=curr && strprefixes[i2].substring(0,len).equals(strprefixes[i])
+          (prefixes[i2]>=curr && strprefixes[i2].substring(0,len).equals(strprefixes[i]))
         ) {
           return "NO";
         }
