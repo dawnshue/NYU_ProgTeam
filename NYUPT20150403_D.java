@@ -5,10 +5,10 @@ public class Main {
     int tests = scanner.nextInt();
     for(int t=0; t<tests; t++) {
       int numbers = scanner.nextInt();
-      int[] prefixes = new int[numbers];
+      //int[] prefixes = new int[numbers];
       String[] strprefixes = new String[numbers];
       for(int n=0; n<numbers; n++) {
-        prefixes[n] = scanner.nextInt();
+        //prefixes[n] = scanner.nextInt();
         strprefixes[n] = Integer.toString(prefixes[n]);
       }
        System.out.println(isConsistent(prefixes, strprefixes));
