@@ -14,6 +14,16 @@ public class Main {
   }
   
   private static int calculatePermutations(int[] heights, int d) {
+    int perms = 0
     
+    for(int i=0; i<heights.length; i++) {
+      for(int i2=0; i2<heights.length; i2++) {
+        if(i!=i2 && (heights[i2]-heights[i])<d && (heights[i2]-heights[i]>-d) {
+          perms++;
+        }
+      }
+    }
+    
+    return perms;
   }
 }
