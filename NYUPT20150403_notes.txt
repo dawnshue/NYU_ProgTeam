@@ -1,0 +1,9 @@
+B. Find cycle in one of 2 ways: Depth first search or breadth first search
+C. pick the next start that will not violate the minimum distance
+Don't know the distance in advance so binary search the minimum distance, then assign cows from left to right
+D. 2-3 ways to solve the problem
+Because 10^4 numbers (Strings) with length of 10, and test cases, so we can't do the brute force way
+If some string w is a prefix of another, then sort all the strings and prefixes will be adjacent!!
+Build a tree of the digits and see if previous nodes are "filled" as you travel up the tree
+Instead of inserting a string to eh collection, insert the hash value and then search for integers
+e. build a dynamic programming table
