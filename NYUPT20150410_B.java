@@ -1,9 +1,9 @@
 import java.util.*;
 public class Main {
+   public static void main(String[] args) {
+    Scanner s = new Scanner(System.in); 
   HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
   Queue<Integer> q = new LinkedList<Integer>();
-  public static void main(String[] args) {
-    Scanner s = new Scanner(System.in);
     while(s.hasNextInt()) {
       int key = s.nextInt();
       if(map.containsKey(key)) {
@@ -17,5 +17,4 @@ public class Main {
       System.out.println(i+" "+map.get(i));
     }
   }
-
 }
