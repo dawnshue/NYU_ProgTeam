@@ -5,8 +5,8 @@ public class Main {
     Scanner s = new Scanner(System.in);
     int chain = 0;
     int reposts = s.nextInt();
-    int count = 0
-    while(count < reposts) {
+    int count = 0;
+    while( reposts > count++) {
       String line = s.next();
       String[] split = line.split(" ");
       split[0] = split[0].toLowerCase();
