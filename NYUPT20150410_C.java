@@ -4,7 +4,9 @@ public class Main {
     HashMap<String, Integer> map = new HashMap<String, Integer>();
     Scanner s = new Scanner(System.in);
     int chain = 0;
-    while(s.hasNext()) {
+    int reposts = s.nextInt();
+    int count = 0
+    while(count < reposts) {
       String line = s.next();
       String[] split = line.split(" ");
       split[0] = split[0].toLowerCase();
