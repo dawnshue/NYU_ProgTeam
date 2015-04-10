@@ -1,0 +1,2 @@
+B. Use BST to maintain the counts and vector to maintain the order
+C. 
