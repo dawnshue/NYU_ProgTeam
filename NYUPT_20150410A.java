@@ -1,5 +1,5 @@
 import java.util.*;
-public Main {
+public class Main {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     int len = s.nextInt();
@@ -9,7 +9,7 @@ public Main {
     }
     System.out.println(bestpair(heights, len));
   }
-  private static String bestpainr(int[] heights, int len) {
+  private static String bestpair(int[] heights, int len) {
     int p1 = 1;
     int p2 = 2;
     int min = Math.abs(heights[1]-heights[0]);
@@ -23,8 +23,8 @@ public Main {
       }
     }
     if(Math.abs(heights[0]-heights[len-1])<min) {
-      p1=1;
-      p2=len;
+      p2=1;
+      p1=len;
     }
     
     return new String(p1+" "+p2);
