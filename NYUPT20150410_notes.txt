@@ -1,2 +1,15 @@
 B. Use BST to maintain the counts and vector to maintain the order
-C. 
+C. Similar to B, use index to represent poster and counts
+Maintain a topological tree and then do a DFS, return the height of the subtree
+Height of x with be the max DFS of the children
+It ensures the edges of the tree are a given depth makes it easier so you could instead maintain the parent and increment the count (my way!)
+
+D. Print the shortest prefix string, this is an extension to last week's problem
+Prefix tree you have the structure that all prefixes are in shallower depths
+So order and then find the prefix
+Maintain a prefix string tree
+Alternatively, sort all the strings
+E. write a number containing A & B (among 0 to 9)
+Excellent numbers are the sum of digits are also a good number (ie. summing 123 is 7 which is not a good number)
+Use modulus on large numbers to determine if it is an excellent number
+Use binomial coefficients to compute all possible N and K modulo M
