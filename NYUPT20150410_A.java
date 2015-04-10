@@ -1,7 +1,6 @@
 import java.util.*;
 public class Main {
-  public static void main(String[] args) { 
-   public static void main(String[] args) {
+  public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     int len = s.nextInt();
     int[] heights = new int[len+1];
@@ -12,8 +11,8 @@ public class Main {
     System.out.println(bestpair(heights, len));
   }
   private static String bestpair(int[] heights, int len) {
-    int p1 = 2;
-    int p2 = 1;
+    int p1 = 1;
+    int p2 = 2;
     
     int np1 = 0;
     int np2 = 1;
@@ -25,7 +24,6 @@ public class Main {
       }
       np1++;
       np2++;
-      System.out.println(min);
     }
     if(p2>len) {
       p2=1;
