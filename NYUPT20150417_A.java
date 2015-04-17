@@ -2,10 +2,10 @@ import java.util.*;
 public class Main {
   public static void main(String[] args) {
     
-    //Scanner scan = new Scanner(System.in);
-    //int n = scan.nextInt();
-    for(int n=0; n<=99; n++)
-    System.out.println(english(n));
+    Scanner scan = new Scanner(System.in);
+    int n = scan.nextInt();
+    //for(int n=0; n<=99; n++)
+    //System.out.println(english(n));
   }
   
    private static String english(int n) {
@@ -20,7 +20,7 @@ public class Main {
     } else if(n%10==0) {
       return tens[n/10];
     } else {
-      return tens[(n-n%10)/10]+singles[n%10];
+      return tens[(n-n%10)/10]+"-"+singles[n%10];
     }
   }
 }
