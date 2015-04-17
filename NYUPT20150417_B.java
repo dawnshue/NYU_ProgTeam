@@ -11,9 +11,18 @@ public class Main {
     while((input-input%(Math.pow(10,places)))/(Math.pow(10,places)) >= 10) {
       places++;
     }
-    for(int i = 0; i<places; i++) {
-      
-    }
     
+    int ans = 1;
+    for(int i=places; i>=0; i--) {
+      if((input-input%Math.pow(10,i))/Math.pow(10,i)==7) {
+        ans=ans*3;
+      } else {
+        ans=ans*2
+      }
+    }
+    if(input%10==7) {
+      ans=ans*2
+    }
+    return ans;
   }
 }
