@@ -11,18 +11,17 @@ public class Main {
     while((input-input%(Math.pow(10,places)))/(Math.pow(10,places)) >= 10) {
       places++;
     }
-    System.out.println(places);
+    //System.out.println(places);
+    int ans=1;
     if(input%10==7) {
       ans=2;
-    } else {
-      ans=1;
     }
     
     for(int i=places; i>0; i--) {
       if((input-input%Math.pow(10,i))/Math.pow(10,i)==7) {
-        ans=2*Math.pow(3,places-1)+ans;
+        ans=2*2*(int)Math.pow(3,places-1)+ans;
       } else {
-        ans=2*2*Math.pow(3,places-1)+ans;
+        ans=2*(int)Math.pow(3,places-1)+ans;
       }
     }
     
