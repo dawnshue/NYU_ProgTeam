@@ -5,7 +5,7 @@ public class Main {
     Scanner scan = new Scanner(System.in);
     int n = scan.nextInt();
     //for(int n=0; n<=99; n++)
-    //System.out.println(english(n));
+    System.out.println(english(n));
   }
   
    private static String english(int n) {
