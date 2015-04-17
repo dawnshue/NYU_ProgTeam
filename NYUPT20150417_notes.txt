@@ -4,3 +4,10 @@ while enough time to -d to endtime then add d to speed
 then once subtracting, conntinue subtracting
 D. shortest path
 C++ priority queue wont work
+E. given a chess board, the queen can only move like a king or vertically
+Place queens on the board so they can't attack each other, you'll be constrained to
+How many ways can you put queens
+Put n so that every 2 adjacent n differ by at least 3
+Make sure algorithm runs in time before testing yours
+F. When you say blocked or not, you do not assume the tiles on the previous row.
+Enumerate all possible placements in previous and current row and see if they match
