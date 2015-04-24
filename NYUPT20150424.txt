@@ -17,3 +17,7 @@ Ensure there is an even number of nodes in the subtree for a pairprogramming
 Dynamic programming on a tree is to consider the children of a node to be ordered sequentially and look from leftmost to rightmost child
 The DP values will be computed for all the subtrees and then decide whether to pick the topmost node or not
 How can you combine the dp values of y1, y2, y3? by using sequential dp no a tree
+dp-pre gets the subtrees
+dp-pre(i+1,1) or dp-pre(0,i+1)
+
+F. first problem requiring graph theory
