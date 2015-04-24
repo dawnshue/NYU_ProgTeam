@@ -1,6 +1,6 @@
 import java.util.*;
 public class Main {
-  public static void main(String[] args) {
+   public static void main(String[] args) {
     //add all numbers to queue
     //pop top of queue and check end of current list
     Scanner s = new Scanner(System.in);
@@ -40,7 +40,7 @@ public class Main {
     }
     if(q.size()>0) {
       int temp = q.poll();
-      if(Match.abs(temp-first)!=1) {
+      if(Math.abs(temp-first)!=1) {
         s.insert(0,temp+" ");
         count++;
         first = temp;
