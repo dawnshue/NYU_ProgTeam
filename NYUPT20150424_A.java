@@ -1,3 +1,8 @@
+//fails on test 5
+//Algorithm and data structure are not difficult but requires interesting observations
+//If you put all odd numbers and then even numbers sequentially
+//All cases with larger n can be solved with all even and then all odd
+
 import java.util.*;
 public class Main {
    public static void main(String[] args) {
