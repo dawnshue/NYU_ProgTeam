@@ -31,13 +31,14 @@ public class Main {
         i2++;
         count++;
       }
-      while(l1.get(i)==temp) {
+      while(l1.get(i)==l2.get(i2) && i<l1.size() && i2<l2.size()) {
         i++;
-        if(l2.get(i2)!=temp) {
-          count++;
-        }
+        i2++;
       }
     }
-    
+    while(i2<l2.size()) {
+      i2++;
+      count++;
+    }
   }
 }
