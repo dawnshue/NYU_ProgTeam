@@ -1,3 +1,8 @@
+//Basically asking to find the complement of the intersection of the two sets
+//This is multiset in that duplicates are allowed
+//Find all elements in S1+S2-intersect(S1,S2)
+//Compute the intersection first using a datastructure like binary search tree
+
 import java.util.*;
 public class Main {
   public static void main(String[] args) {
