@@ -22,5 +22,22 @@ public class Main {
   private static int getLeast(List<Integer> l1, List<Integer> l2) {
     Collections.sort(l1);
     Collections.sort(l2);
+    int count = 0;
+    int i=0;
+    int i2=0;
+    while(i<l1.size()) {
+      int temp = l1.get(i);
+      while(l2.get(i2)!=temp && l2.get(i2)<temp && i2<l2.size()) {
+        i2++;
+        count++;
+      }
+      while(l1.get(i)==temp) {
+        i++;
+        if(l2.get(i2)!=temp) {
+          count++;
+        }
+      }
+    }
+    
   }
 }
