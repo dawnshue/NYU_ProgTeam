@@ -1,0 +1,19 @@
+C. Find the max between two steps and then minimize the point
+One way, use dynamic programming modelled such that dp(i,k) be travelling from 1 to i and 
+k represents the nmbr of steps in between
+To compute dp(i,k), the parent state from be dp(j,k-1) where j is from 0 to i-1
+If you exceed k, then your step was too small, if you reach the last stop too early, 
+then the allowed max distance for a day is too large so make it larger
+Binary search approach will havea much better time complexity
+
+D. Unique factorization, need to output all factorizations but need factors in increasing order
+Output will need to be in a reasonable file size
+2 to sqrt(n), bc for value k, then n is divisible by n/k
+
+E. Tree problem
+Like relationships in a company
+Select the subset of nodes in the tree to satisfy two constraints (the working efficiency of an individual)
+Ensure there is an even number of nodes in the subtree for a pairprogramming
+Dynamic programming on a tree is to consider the children of a node to be ordered sequentially and look from leftmost to rightmost child
+The DP values will be computed for all the subtrees and then decide whether to pick the topmost node or not
+How can you combine the dp values of y1, y2, y3? by using sequential dp no a tree
