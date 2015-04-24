@@ -12,6 +12,7 @@ public class Main {
     Queue<Integer> q2 = new LinkedList<Integer>();
     int count = 1;
     int last = 1;
+    int first = 1;
     StringBuilder s = new StringBuilder("1");
     for(int i=2; i<=n; i++) {
       if((i-last)==1) {
@@ -35,6 +36,14 @@ public class Main {
         while(q2.size()>0) {
           q.add(q2.poll());
         }
+      }
+    }
+    if(q.size()>0) {
+      int temp = q.poll();
+      if(Match.abs(temp-first)!=1) {
+        s.insert(0,temp+" ");
+        count++;
+        first = temp;
       }
     }
     System.out.println(count);
