@@ -16,15 +16,17 @@ public class Main {
         }
     }
     public static String[] getPieces(int n, String input) {
+        List<Character> used = new ArrayList<Character>();
         String[] strings = new String[n];
         int pos = 0;
         for(int i=0; i<n-1; i++) {
             int oldpos = pos;
             char a = input.charAt(pos++);
+            used.add(a);
             if(pos>=input.length()) {
                     return null;
             }
-            while(input.charAt(pos) == a) {
+            while(used.contains(input.charAt(pos))) {
                 pos++;
                 if(pos>=input.length()) {
                     return null;
