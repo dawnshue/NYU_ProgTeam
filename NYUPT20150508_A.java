@@ -26,15 +26,26 @@ public class Main {
         System.out.println();
         */
         int count=0;
-        for(int x=0; x<list.size()-1; x++) {
-            for(int y=x+1; y<list.size(); y++) {
-                if(list.get(x)*list.get(y)<=input) {
-                    count++;
-                } else {
+        for(int x=1; x<=input; x++) {
+            int x2 = x;
+            int divisions = 0;
+            int temp = 0;
+            while(temp<list.size() && x2>=list.get(temp)) {
+                if(x2%(list.get(temp))==0) {
+                    x2 = x2/list.get(temp);
+                    divisions++;
+                }
+                if(divisions>2) {
                     break;
                 }
+                temp++;
+            }
+            if(divisions==2) {
+                //System.out.print(x+" ");
+                count++;
             }
         }
+        //System.out.println();
         return count;
     }
     private static boolean isPrime(int input) {
