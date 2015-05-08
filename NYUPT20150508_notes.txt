@@ -1,1 +1,9 @@
+A. n<=3000, small constraint so we can enumerate through all numbers in n
+Checking almost primes
+2 to sqrt(x) and check if it's a prime
 
+B.
+
+C. Count the number of ways for the white piece to reach the top row, can only move forward--a directed cyclic graph
+Think of each grid as a node with an outgoing edge from current to target position
+Count the path using dynamic programming
